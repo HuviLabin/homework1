@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack items vertically */
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#text {
+    width: 200px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 50px;
+    margin-bottom: 10px; /* Spacing between text and buttons */
+}
+
+#bu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 10px;
+}
+
+button {
+    width: 60px; /* Standard width */
+    height: 60px;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#d {
+    grid-column: span 2; /* Make delete button span 2 columns */
+    width: 130px; /* Make the delete button wider (adjust as needed) */
+}
